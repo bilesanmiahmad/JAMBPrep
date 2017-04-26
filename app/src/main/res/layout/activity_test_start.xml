@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/clear_padding"
+    android:paddingRight="@dimen/clear_padding"
+    android:paddingTop="@dimen/clear_padding"
+    android:orientation="vertical"
+    tools:context="com.example.ahmad.jambprepguide.TestStartActivity"
+    android:layout_marginBottom="@dimen/txt_quizwelcome_botom_margin">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_startpage"
+        android:gravity="center_horizontal"
+        android:textStyle="normal|bold"
+        android:textSize="@dimen/txt_reg_title_size"
+        android:paddingTop="@dimen/txt_quizstart_margin"
+        android:paddingBottom="@dimen/txt_reg_margin"
+        android:textColor="@android:color/black"
+        android:id="@+id/txt_quizstart_subject" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_welcome_txt"
+        android:textSize="@dimen/txt_reg_title_size"
+        android:layout_marginBottom="@dimen/txt_quizwelcome_botom_margin"
+        android:id="@+id/txt_quizstart_welcome"
+        android:paddingEnd="@dimen/question_side_padding"
+        android:paddingStart="@dimen/question_side_padding" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_quizstart_txt"
+        android:textSize="18sp"
+        android:id="@+id/btn_quizstart_start"
+        android:layout_marginEnd="@dimen/question_side_padding"
+        android:layout_marginStart="@dimen/question_side_padding" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:fillViewport="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ahmad.jambprepguide.StartActivity">
+    <LinearLayout
+        android:id="@+id/activity_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/background_light">
+
+        <ImageView
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:src="@drawable/jamb_logo"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/logo_descriptor" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="@dimen/title_size"
+            android:textAlignment="center"
+            android:textColor="@color/btn_reg_color"
+            android:layout_marginBottom="@dimen/txt_partition_margin"
+            android:layout_marginTop="@dimen/txt_top_partition_margin" />
+        <Button
+            android:layout_width="@dimen/reg_btn_width"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_phone_signin"
+            android:id="@+id/btn_phone_signin"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:background="@color/btn_reg_color"
+            android:textColor="@android:color/background_light"
+            android:padding="@dimen/btn_reg_padding"
+            android:layout_margin="@dimen/btn_reg_padding" />
+        <Button
+            android:layout_width="@dimen/reg_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/btn_phone_reg"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_border"
+            android:textColor="@color/btn_reg_color"
+            android:padding="@dimen/btn_reg_padding"
+            android:layout_margin="@dimen/btn_reg_padding"
+            android:id="@+id/phonereg"/>
+        <Button
+            android:layout_width="@dimen/reg_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:text="@string/btn_jamb_details"
+            android:background="@drawable/btn_border"
+            android:textColor="@color/btn_reg_color"
+            android:padding="@dimen/btn_reg_padding"
+            android:layout_margin="@dimen/btn_reg_padding"
+            android:id="@+id/jambreg"/>
+    </LinearLayout>
+</ScrollView>
